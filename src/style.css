@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background: #0e1014;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #e4e5ea;
+    margin: 0;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1141px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+a {
+    color: #e4e5ea;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header .top,
+.nav,
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content,
+.content .item,
+.footer{
+    align-items: flex-start;
+}
+
+a.main-link * {
+    position: relative;
+    vertical-align: middle;
+}
+
+.header ul,
+.header li {
+    dispay: block;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.header .contacts {
+    width: 25%;
+    text-align: right;
+}
+
+.header .contacts a {
+    margin-left: 20px;
+
+}
+
+.header .slogan {
+    width: 165px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.balls {
+    position: absolute;
+    min-width: 320px;
+    max-width: 1141px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.purple-ball {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    left: 868px;
+    top: -2px;
+
+    background: url("assets/ball1.png");
+}
+
+.red-ball {
+    position: absolute;
+    width: 117px;
+    height: 117px;
+    left: 519px;
+    top: 83px;
+
+    background: url("assets/ball2.png");
+}
+
+.small-ball {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 851px;
+    top: 547px;
+
+    background: url("assets/ball3.png");
+}
+
+@media only screen and (min-width: 901px) {
+    .content,
+    .content .item,
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content,
+    .footer{
+        align-items: flex-start;
+    }
+
+    .content .left,
+    .content .right{
+        width: 370px;
+        margin-top: 80px;
+    }
+
+    .content .right {
+        width: 340px;
+        text-align: right;
+    }
+
+    .content .right p {
+        text-align: right;
+    }
+
+    .header .top {
+        margin-bottom: 10px;
+    }
+
+    .content .right .item {
+        width: 50%;
+        float: left;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .content .right p {
+        text-align: right;
+    }
+
+    .content .right .orange {
+        text-transform: uppercase;
+    }
+
+    .footer .item.contacts {
+        width: 35%;
+        text-align: right;
+        padding-right: 0;
+    }
+
+    .footer .contacts a {
+        margin-left: 15px;
+    }
+
+    .footer .links {
+        margin: 15px 0;
+    }
+}
+
+
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0 0 25px;
+}
+
+span.orange {
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+h1 span.orange {
+    font-weight: 900;
+}
+
+.content .slogan {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+.content .right p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+
+.content .right .orange {
+    font-size: 18px;
+}
+
+
+
+.content .right .item p.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+}
+.content .right .item p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 10px 20px;
+}
+
+.btn-blue {
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #E4E5EA;
+    background: #4077F3;
+    margin: 15px 0;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer .title {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+    margin-bottom: 20px;
+}
+
+.footer .item {
+    padding-right: 30px;
+}
+
+.footer .item a {
+    display: block;
+    width: 100%;
+}
+
+.footer .col {
+    float: left;
+    width: 50%;
+    min-width: 220px;
+}
+
+.footer .col a {
+    padding-right: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+.footer .contacts a {
+    display: inline;
+}
+
+.copyright {
+    padding: 30px 0 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: right;
+
+    /* light text */
+
+    color: #E4E5EA;
+}
+
+.copyright a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .content .left, .content .right {
+        float: none;
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 0;
+    }
+
+    .header,
+    .content,
+    .footer {
+        padding: 0 15px;
+    }
+
+    .header {
+        background: #1E1E1E;
+        padding: 15px 0;
+    }
+
+    .header .main-link,
+    .header .contacts,
+    .header .bot,
+    .copyright {
+        display: none;
+    }
+
+    .header .top, .nav, .nav ul {
+        justify-content: center;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content .slogan {
+        margin-bottom: 40px;
+    }
+
+    .content .right {
+        padding-bottom: 50px;
+    }
+
+    .content .right p {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .content .right .small-gift {
+        padding-left: 20px;
+        background: url("assets/dash.png") left center no-repeat;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .content .right .item {
+        float: left;
+        width: 150px;
+    }
+
+    .content .right .item:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .btn-blue {
+        display: none;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+
+    .footer .item {
+        clear: both;
+    }
+
+    .footer .col {
+        margin-bottom: 30px;
+    }
+
+    .footer .title {
+        font-size: 12px;
+    }
+
+    .footer .col a {
+        font-size: 14px;
+    }
+
+    .footer .contacts a {
+        margin-right: 10px;
+    }
+
+    .footer .links {
+        margin: 5px 0 0;
+    }
+}
