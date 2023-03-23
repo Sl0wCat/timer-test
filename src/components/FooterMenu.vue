@@ -49,7 +49,7 @@ export default defineComponent({
     };
   },
   methods: {
-    colsNum(arr: Array<string>) {
+    colsNum(arr: Array<object>) {
       return Math.ceil(arr.length / 5);
     },
   },
